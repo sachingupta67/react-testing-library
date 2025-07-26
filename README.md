@@ -106,3 +106,51 @@ describe("Greet Test:::::::", () => {
 
 ```
 
+# Code coverage
+ - a metric that help you to understand how much of your software code is tested
+ - statement coverage
+   - how many of the statements in the code have been executed
+  
+ - branches coverage
+   - how many of the branches of the control structures (if statements of instance ) has been executed
+
+ - function coverage
+   - how many of the function defined hasbeen called and finally
+
+ - Line coverage
+   - how many lines of source of code hasbeen tested 
+
+
+# include & Exclude  & Threshold from collect coveraage from config
+
+```
+ test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./src/setupTests.ts",
+    css: true,
+    coverage: {
+      provider: "v8", // or 'c8'
+      reporter: ["text", "html"],
+      include: ["src/**/*.{ts,tsx,js,jsx}"], // ✅ Include specific files
+      exclude: [
+        "node_modules/",
+        "dist/",
+        "**/*.d.ts", // ✅ Type declaration files
+        "**/*.type.ts", // ✅ Custom type files
+        "**/*.interface.ts", // ✅ Interface definition files
+        "**/__tests__/**", // Optional: exclude test folders
+        "**/*.test.*", // Optional: exclude test files
+        "**/*.spec.*", // Optional: exclude spec files
+        "src/main.tsx"
+      ],
+      thresholds: {
+        lines: 80,
+        statements: 80,
+        branches: 70,
+        functions: 75,
+      },
+    },
+  },
+
+```
