@@ -201,7 +201,7 @@ Note .. that suffix is be form a query, it could be
   - throw descriptive error if no elements or if more than one match is found
   - Suffix can be ,  one of Role, LabelText, PlaceholderText, Text, DisplayValue , AltText, Title , TestId
 
-  # getByRole 
+  # getByRole  (It should be on Top Priority if not work then move to another)
     - queries for element with the given role
     - Role refers to the ARIA role which provides semantic meaning to content to ensure people using assistive tech are 
       able  to use them
@@ -217,4 +217,12 @@ Note .. that suffix is be form a query, it could be
       an anchor element as a button in the navbar , we can add role ="button"
     - How to get the role of element
      - https://www.w3.org/TR/html-aria/#docconformance
-     
+  
+
+  Example
+  - in Component if we have input , and textarea both have same role ="textbox"
+  - then getByRole with fail as we have multiple element with same role
+  - we can use name in getByRole
+     getByRole("role",{
+      name:"label of form element or text content of a button or value of the aria-label attribute"
+     })
