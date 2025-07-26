@@ -5,7 +5,7 @@ describe("Render App Successfully", () => {
   it("Get text in p tag", () => {
     render(<App />);
     const textElement = screen.getByText(
-      /Click on the Vite and React logos to learn more/i
+      /Test App/i
     );
     expect(textElement).toBeInTheDocument();
   });

@@ -172,3 +172,49 @@ describe("Greet Test:::::::", () => {
  - code is not importent from user point of view
    ex: a utitity function that we written for date to show in User friendly format , we dont have to test the function, we can directly test the date in the expected format
  -   
+
+# RTL Queries
+ In General, 
+ - Every test we write generally involves the following steps
+  1. Render the component
+    - use the render method from RTL
+  2. Find an element rendered by the component  
+  3. Asset against the element found in step.2 which will pass or fail the test
+    - for assertion we use expect passing in a value and combine it with a matcher function from jest or jest-dom
+
+Queries
+ - that are methods that Provided By RTL to find the element on the page
+ - To find the single element on the page we have
+   - getBy..
+   - queryBy..
+   - findBy..
+ - To find multiple elements on the page we have 
+   - getAllBy..
+   - queryAllBy..
+   - findAllBy..
+
+Note .. that suffix is be form a query, it could be 
+        one of Role, LabelText, PlaceHolderText, Text, DisplayValue, AltText, Title and finally TestId
+
+# getBy.. Query
+  - class of query return the matching node for a query,
+  - throw descriptive error if no elements or if more than one match is found
+  - Suffix can be ,  one of Role, LabelText, PlaceholderText, Text, DisplayValue , AltText, Title , TestId
+
+  # getByRole 
+    - queries for element with the given role
+    - Role refers to the ARIA role which provides semantic meaning to content to ensure people using assistive tech are 
+      able  to use them
+    - by default , many semantic elements in HTML have a role
+      ex: button ==> button role
+          anchor ==> link role
+          h1 to h6 ==> heading role
+          checkboxes => checkbox role
+          radio => radio role
+          ...
+    - if working with element which has no default role , or if you want to specify different role , role attribute can be used 
+      ex: 
+      an anchor element as a button in the navbar , we can add role ="button"
+    - How to get the role of element
+     - https://www.w3.org/TR/html-aria/#docconformance
+     
