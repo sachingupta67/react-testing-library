@@ -224,5 +224,5 @@ Note .. that suffix is be form a query, it could be
   - then getByRole with fail as we have multiple element with same role
   - we can use name in getByRole
      getByRole("role",{
-      name:"label of form element or text content of a button or value of the aria-label attribute"
+      name:"level of form element or text content of a button or value of the aria-label attribute"
      })
