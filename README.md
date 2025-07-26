@@ -154,3 +154,21 @@ describe("Greet Test:::::::", () => {
   },
 
 ```
+
+# What to test 
+ - Test component renders
+ - Test component renders with props
+   - component render right html based on props
+ - Test component renders in different states
+   ex: in navbar login button is render only when loggedout , not if the user logged in
+ - Test component reacts to events
+   ex: buttons and forms allow user interactions
+ 
+
+# What not to test
+ - implementation details
+ - third party code  
+   ex: material ui using , we dont need to test those component which we are consuming
+ - code is not importent from user point of view
+   ex: a utitity function that we written for date to show in User friendly format , we dont have to test the function, we can directly test the date in the expected format
+ -   
