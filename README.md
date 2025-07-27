@@ -230,9 +230,13 @@ Note .. that suffix is be form a query, it could be
 
   # getLabelByText
   - will search for the label that matches the given text, then find the element associated with that label
+   eg: label for input
   - How to avoid with same label
     - use selector 
     ``` 
     const nameElement2 = screen.getByLabelText("Name", { selector: "input" });
 
     ```
+ # getByPlaceholderText
+  - will search for all elements with a placeholder attribute and find one that matches the given text
+  
