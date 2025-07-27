@@ -251,3 +251,6 @@ Note .. that suffix is be form a query, it could be
  # getByAltText
   - it will return the element  that has the given alt text
   - it only supports element which accept alt attribute like eg: img, input, area or custom html elements
+
+# getByTitle
+ - return the element which has title attributes

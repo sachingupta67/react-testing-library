@@ -31,6 +31,9 @@ describe("Application Component", () => {
     const imageElement = screen.getByAltText("test-image");
     expect(imageElement).toBeInTheDocument()
 
+    const closeElement = screen.getByTitle("close");
+    expect(closeElement).toBeInTheDocument()
+
     const bioElement = screen.getByRole("textbox", { name: "Bio" });
     expect(bioElement).toBeInTheDocument();
 
