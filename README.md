@@ -226,3 +226,13 @@ Note .. that suffix is be form a query, it could be
      getByRole("role",{
       name:"level of form element or text content of a button or value of the aria-label attribute"
      })
+  
+
+  # getLabelByText
+  - will search for the label that matches the given text, then find the element associated with that label
+  - How to avoid with same label
+    - use selector 
+    ``` 
+    const nameElement2 = screen.getByLabelText("Name", { selector: "input" });
+
+    ```
