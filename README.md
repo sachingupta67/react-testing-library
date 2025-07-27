@@ -254,3 +254,6 @@ Note .. that suffix is be form a query, it could be
 
 # getByTitle
  - return the element which has title attributes
+
+# getByTestId
+ - return the element that has the matching data-testId attributes
