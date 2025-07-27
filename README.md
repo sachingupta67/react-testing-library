@@ -239,4 +239,10 @@ Note .. that suffix is be form a query, it could be
     ```
  # getByPlaceholderText
   - will search for all elements with a placeholder attribute and find one that matches the given text
+
+ # getByText
+  - it will search for all element that have the text node with the textContent matching the given text
+  - typically ,
+    used to find div , p , span elements
   
+ 
