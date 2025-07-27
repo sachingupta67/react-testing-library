@@ -247,4 +247,7 @@ Note .. that suffix is be form a query, it could be
   
  # getByDisplayValue
   - it returns the input , textarea, or select element that has the matching display
-  
+
+ # getByAltText
+  - it will return the element  that has the given alt text
+  - it only supports element which accept alt attribute like eg: img, input, area or custom html elements
