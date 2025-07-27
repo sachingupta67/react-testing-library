@@ -257,3 +257,19 @@ Note .. that suffix is be form a query, it could be
 
 # getByTestId
  - return the element that has the matching data-testId attributes
+
+Note
+- when to use which queries
+  - priority order of queries
+    - Your test should resemble how users interact with your code (component, page etc) as much as possible
+    - recomemded order
+      1. getByRole 
+      2. getByLabelText - forms fields with label tag,and selector
+      3. getByPlaceholderText
+      4. getByText - outside form text content | non interacted element
+      5. getByDisplayValue
+      6. getByAltText - it varies with browser and technology to support - not directly access by screen     
+                    readers
+      7. getByTitle - it varies with browser and technology to support - not directly access by screen     
+                    readers
+      8. getByTestId
