@@ -245,4 +245,6 @@ Note .. that suffix is be form a query, it could be
   - typically ,
     used to find div , p , span elements
   
- 
+ # getByDisplayValue
+  - it returns the input , textarea, or select element that has the matching display
+  

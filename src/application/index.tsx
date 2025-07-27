@@ -7,7 +7,14 @@ const Application = () => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="full name" />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="full name"
+            value="Sachin"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
