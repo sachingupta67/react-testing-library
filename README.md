@@ -502,3 +502,17 @@ describe("Counter Two test", () => {
 
 # Mocking HTTP request
  - Using MSW Library | Mock Service worker API
+
+# Static Analysis Testing
+ - process of verifying that your code meets certain expectation without actually running it
+   - ensure consistent style and formating
+   - check for common mistakes and possible bugs
+   - limit the complexity of code
+   - verify type consistency
+  
+ Tools
+  - Typescript
+  - Eslint
+  - Prettier
+  - Husky
+  - lint-staged
