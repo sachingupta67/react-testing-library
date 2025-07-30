@@ -386,3 +386,18 @@ or findAllBy'
   if factors in that the browser eg: wouldn't let a user click a hidden element or type in a disable text box
 
   ```
+
+# Pointer Interactions
+ Note - click is not a pointer api its a convenience api that internally calls the Pointer API
+
+ convenience apis
+  - click()
+  - dblClick()
+  - tripleClick()
+  - hover()
+  - unHover()
+
+ Low level apis
+  - pointer({keys:'[MouseLeft]'})
+  - pointer({keys:'[MouseLeftMouseRight]'})
+  - pointer('[MouseLeftMouseRight]')
