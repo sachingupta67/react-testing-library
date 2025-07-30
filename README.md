@@ -288,3 +288,29 @@ Note
     getAllByTitle
     getAllByTestId
 
+# TextMatch
+ - its a type which can be either a string , regex, function
+
+ ```
+ <div> Hello world </div>
+
+screen.getByText('Hello world') // full string match
+scree.getByText('llo world',{exact:false}) // substring match
+screen.getByText('Hello world',{exact:false}) // ignore case
+
+
+screen.getByText(/World/) // regex , substring match
+screen.getByText(/World/i) // regex, substring match , ignore case
+screen.getByText(/^hello world $/i) // full string match, ignore case
+
+
+
+/*
+-  as function
+- (content?:string, element?:Element | null ) => boolean
+*/
+
+screen.getByText((content)=>content.startsWith('Hello'))
+
+
+ ```
