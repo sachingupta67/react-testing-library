@@ -314,3 +314,13 @@ screen.getByText((content)=>content.startsWith('Hello'))
 
 
  ```
+
+# queryBy or queryAllBy
+   - queryBy
+    - return the matching node for a query , and return null if no element match
+    - useful for asserting an element that is not present
+    - throws an error if more than one match is found
+  
+  - queryAllBy
+    - return the all matching node for a query , and return null if no element match
+  
