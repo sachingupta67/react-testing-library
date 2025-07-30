@@ -2,6 +2,7 @@ import Application from "./application";
 import Counter from "./Counter/counter";
 import MuiMode from "./mui/mui-mode";
 import Provider from "./providers/app-providers";
+import Users from "./Users";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         {/* <Application /> */}
         <Counter />
         <MuiMode/>
+        <Users/>
       </div>
     </Provider>
   );
