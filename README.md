@@ -357,3 +357,32 @@ or findAllBy'
 # Debug | Important
 - scree.debug (print DOM)
 - logRoles (print Aria Role present in DOM Tree)
+
+# User Interactions
+- a click using a mouse or a keypress using a keyboard
+- software has to response to such interactions
+- test should ensure the interactions are handles as expected
+
+ - user-event  library
+  - a component library for a testing library that simulates user interactions by
+    dispatching the event that would happen if the interactions took place in a browser
+  - it a recomended way
+
+# fireEvent vs user-event
+  fireEvent
+   - its a method from RTL , which is used to dispatch DOM Events
+   
+  user-event
+   - it simulates full interaction , which may fire multiple events and do additional checks 
+     along the way
+  
+  ```
+  eg:
+  we can dispatch the change event on input field using fireEvent
+  - when user types into a box , the element has to be focused , and then keyboard and input events
+    are fired and the selection and value on the element are manipulated as they type
+
+  - user-events allow youto describe a user interaction instead of a concrete event, it adds visibility and intractability checks along the way and manipulates DOM just like a user interactions in the browser would, 
+  if factors in that the browser eg: wouldn't let a user click a hidden element or type in a disable text box
+
+  ```
