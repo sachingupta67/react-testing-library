@@ -30,12 +30,18 @@ describe("Skill Component Test", () => {
   });
 
   it("start learning button is eventually displayed", async() => {
-    render(<Skills skills={skills} />);
+    render(<Skills skills={skills} />)
+    //  const view=  render(<Skills skills={skills} />);
+    //  logRoles(view.container)
+    // screen.debug()
     const startLearningButton =await screen.findByRole("button", {
       name: "Start Learning",
     },{
       timeout:1005
     });
+
+    // screen.debug()
+    // logRoles(view.container)
     expect(startLearningButton).toBeInTheDocument();
   });
 });

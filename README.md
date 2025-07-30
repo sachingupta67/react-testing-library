@@ -354,3 +354,6 @@ or findAllBy'
    const foo = container.querySelector("[data-foo]=bar")
 
    ```
+# Debug | Important
+- scree.debug (print DOM)
+- logRoles (print Aria Role present in DOM Tree)
