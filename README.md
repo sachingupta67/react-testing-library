@@ -401,3 +401,24 @@ or findAllBy'
   - pointer({keys:'[MouseLeft]'})
   - pointer({keys:'[MouseLeftMouseRight]'})
   - pointer('[MouseLeftMouseRight]')
+
+
+# keyboard intreactions
+- note : type & tab are not part of keyboard api
+
+- Utility API
+ - type()
+ - clear()
+ - selectionOptions()
+ - deSelectOptions()
+ - upload()
+
+
+- Convenience API
+ - tab()
+
+- Clipboard APis
+ - copy()
+ - cut()
+ - paste()
+ 
