@@ -337,3 +337,20 @@ screen.getByText((content)=>content.startsWith('Hello'))
 or findAllBy'
 - it return an promise which resolve to an array of elements when any elements are found which match the given query
 - the promise is rejected if no elements is found or more than one element found after default timeout of 1000ms
+
+
+# Manual Queries
+ - RTL Queries
+   - getBy | getAllBy
+   - queryBy | queryAllBy
+   - findBy | findAllBy
+ - manual queries
+   - we can use regular querySelector DOM API to find elements
+   - but its not recommended to use
+   - its not visible directly by the user
+   
+   ```
+   const {container} = render(<MyComponent/>);
+   const foo = container.querySelector("[data-foo]=bar")
+
+   ```
