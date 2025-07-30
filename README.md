@@ -324,3 +324,16 @@ screen.getByText((content)=>content.startsWith('Hello'))
   - queryAllBy
     - return the all matching node for a query , and return null if no element match
   
+# Appearance / Disapperance
+
+- what if the elements not present in the DOM to begin but make their way into the 
+ DOM after sometime
+
+ eg: data is fetched from server will be rendered only after a few milliseconds
+- will use 'findBy 
+- it return a promise which resolve when element is found which matches the given query
+- the promise is rejected if no element is found or more than one element found after default timeout of 1000ms
+
+or findAllBy'
+- it return an promise which resolve to an array of elements when any elements are found which match the given query
+- the promise is rejected if no elements is found or more than one element found after default timeout of 1000ms
