@@ -273,3 +273,18 @@ Note
       7. getByTitle - it varies with browser and technology to support - not directly access by screen     
                     readers
       8. getByTestId
+
+
+# Query Multiple Elements in the DOM
+ - getAllBy query will be helpful
+ - return all an array of all matching nodes for a query, a throws an error if no element match
+ - ex:
+    getAllByRole
+    getAllByLabelText
+    getAllByPlaceholderText
+    getAllByText
+    getByDisplayValue
+    getAllByAltText
+    getAllByTitle
+    getAllByTestId
+
